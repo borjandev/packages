@@ -328,6 +328,7 @@ class RenderTableViewport extends RenderTwoDimensionalViewport {
 
   @override
   void setupParentData(RenderBox child) {
+    print('SETUPPARENTDATA, child: $child');
     if (child.parentData is! TableViewParentData) {
       child.parentData = TableViewParentData();
     }
